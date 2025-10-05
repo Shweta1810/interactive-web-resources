@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Technology Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Web Technology Showcase</h1>
+    <p>
+      A single-page demo: HTML5 multimedia, Geolocation API, Flexbox layout,
+      asynchronous data (Promises / async-await), and XML → JSON conversion.
+    </p>
+  </header>
+
+  <section class="banner">
+    Interactive learning interface — try each card below
+  </section>
+
+  <main class="flex-container">
+    <!-- HTML5 Multimedia -->
+    <div class="card">
+      <h2>🎥 HTML5 Multimedia</h2>
+      <video id="demoVideo" width="100%" controls>
+        <source src="assets/sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="controls">
+        <button onclick="playVideo()">Play</button>
+        <button onclick="pauseVideo()">Pause</button>
+        <button onclick="toggleMute()">Toggle Mute</button>
+        <button onclick="seek()">Seek +5s</button>
+        <button onclick="setSpeed()">Speed ×1.5</button>
+      </div>
+
+      <audio controls>
+        <source src="assets/background-music.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <!-- Geolocation API -->
+    <div class="card">
+      <h2>📍 Geolocation API</h2>
+      <p>Click to get your current coordinates (requires HTTPS / localhost).</p>
+      <div class="btn-group">
+        <button onclick="getLocation()">Get My Location</button>
+        <button onclick="clearLocation()">Clear</button>
+      </div>
+      <p id="geoStatus">Idle — location not fetched.</p>
+    </div>
+
+    <!-- Async Fetch Simulation -->
+    <div class="card">
+      <h2>⚙️ Simulated Async Fetch</h2>
+      <p>This simulates an API call using Promises and async/await.</p>
+      <div class="btn-group">
+        <button onclick="fetchWithPromise()">Fetch (Promise.then)</button>
+        <button onclick="fetchWithAsync()">Fetch (async/await)</button>
+      </div>
+      <p id="fetchResult">No data yet.</p>
+    </div>
+  </main>
+
+  <!-- XML to JSON Conversion -->
+  <section class="xml-json card">
+    <h2>🧩 XML → JSON Conversion</h2>
+    <p>Paste or edit XML below and click Convert to see JSON output.</p>
+    <textarea id="xmlInput" rows="5">
+<note>
+  <to>Shweta</to>
+  <from>ChatGPT</from>
+  <message>Hello from XML!</message>
+</note>
+    </textarea>
+    <button onclick="convertXMLtoJSON()">Convert</button>
+    <pre id="jsonOutput"></pre>
+  </section>
+
+  <footer>
+    <p>Created by Shweta Myageri | © 2025 Interactive Web Tech Showcase</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
