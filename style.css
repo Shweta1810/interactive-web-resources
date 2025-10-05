@@ -1,0 +1,90 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.banner {
+  background-color: #1ca65d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1 1 300px;
+  max-width: 350px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.controls button,
+.btn-group button,
+.xml-json button {
+  margin: 5px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1ca65d;
+  color: white;
+  cursor: pointer;
+}
+
+.controls button:hover,
+.btn-group button:hover,
+.xml-json button:hover {
+  background-color: #16834a;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+pre {
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+}
